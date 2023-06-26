@@ -17,88 +17,88 @@
                 <div class="card-header">
                     <h4>Payment form example</h4>
                 </div>
-                <div class="alert alert-danger p-2 m-3" role="alert">
-                    Some fields are missing
+                <div class="alert alert-danger p-3 m-3" role="alert">
+                    <p style="margin: 0 15px;">Some fields are missing</p>
                 </div>
                 <div class="card-body">
                     <div class="row">
                         <div class="col-4">
-                            <label for="basic-url" class="form-label">Card #</label>
+                            <label for="card-number" class="form-label">Card #</label>
                             <div class="input-group mb-3">
-                                <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3"
-                                    placeholder="XXXXXXXXXX">
+                                <input type="text" class="form-control" id="card-number" placeholder="XXXXXXXXXX">
                             </div>
                         </div>
                         <div class="col-4">
-                            <label for="basic-url" class="form-label">CVC #</label>
+                            <label for="cvc-number" class="form-label">CVC #</label>
                             <div class="input-group mb-3">
-                                <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3"
-                                    placeholder="0000">
+                                <input type="text" class="form-control" id="cvc-number" placeholder="0000">
                             </div>
                         </div>
                         <div class="col-4">
-                            <label for="basic-url" class="form-label">Amount</label>
+                            <label for="amount" class="form-label">Amount</label>
                             <div class="input-group mb-3">
-                                <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3"
-                                    placeholder="Amount">
+                                <h5>$</h5><input type="text" class="form-control" id="amount" placeholder="Amount">
                             </div>
                         </div>
                         <div class="col-6">
-                            <label for="basic-url" class="form-label">First Name</label>
+                            <label for="first-name" class="form-label">First Name</label>
                             <div class="input-group mb-3">
-                                <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3"
-                                    placeholder="Amount">
+                                <input type="text" class="form-control" id="first-name">
                             </div>
                         </div>
                         <div class="col-6">
-                            <label for="basic-url" class="form-label">Last Name</label>
+                            <label for="last-name" class="form-label">Last Name</label>
                             <div class="input-group mb-3">
-                                <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3"
-                                    placeholder="Amount">
+                                <input type="text" class="form-control" id="last-name">
                             </div>
                         </div>
                         <div class="col-6">
-                            <label for="basic-url" class="form-label">City</label>
+                            <label for="city" class="form-label">City</label>
                             <div class="input-group mb-3">
-                                <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3"
-                                    placeholder="Amount">
+                                <input type="text" class="form-control" id="city">
                             </div>
                         </div>
                         <div class="col-3">
-                            <label for="basic-url" class="form-label">State</label>
+                            <label for="state" class="form-label">State</label>
                             <div class="input-group mb-3">
-                                <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3"
-                                    placeholder="Amount">
+                                <input class="form-control" list="datalistOptions" id="state"
+                                    placeholder="Pick a state">
+                                <datalist id="datalistOptions">
+                                    <option value="Ecuador">
+                                    <option value="Venezuela">
+                                    <option value="Uruguay">
+                                    <option value="Costa Rica">
+                                    <option value="Argentina">
+                                </datalist>
                             </div>
                         </div>
                         <div class="col-3">
-                            <label for="basic-url" class="form-label">Postal Code</label>
+                            <label for="postal-code" class="form-label">Postal Code</label>
                             <div class="input-group mb-3">
-                                <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3"
-                                    placeholder="Amount">
+                                <input type="text" class="form-control" id="postal-code">
                             </div>
                         </div>
                         <div class="col-6">
-                            <label for="basic-url" class="form-label">We accept:</label>
+                            <label class="form-label">We accept:</label>
                             <div class="input-group mb-3" data-toggle="buttons">
-                                <label class="btn btn-secondary">
+                                <label for="visa" class="btn btn-secondary">
                                     <input type="radio" name="tarjeta" id="visa" autocomplete="off">
-                                    <i class="fab fa-cc-visa"></i> <img src="icons/visa.png" width="30px" height="30px"
+                                    <i class="icon-visa"></i> <img src="icons/visa.png" width="30px" height="30px"
                                         alt="">
                                 </label>
-                                <label class="btn btn-secondary">
+                                <label for="america" class="btn btn-secondary">
                                     <input type="radio" name="tarjeta" id="america" autocomplete="off">
-                                    <i class="fab fa-cc-amex"></i> <img src="icons/amex.png" width="30px" height="30px"
+                                    <i class="icon-amex"></i> <img src="icons/amex.png" width="30px" height="30px"
                                         alt="">
                                 </label>
-                                <label class="btn btn-secondary">
+                                <label for="mastercad" class="btn btn-secondary">
                                     <input type="radio" name="tarjeta" id="mastercard" autocomplete="off">
-                                    <i class="fab fa-cc-mastercard"></i> <img src="icons/mastercard.png" width="30px"
+                                    <i class="icon-mastercard"></i> <img src="icons/mastercard.png" width="30px"
                                         height="30px" alt="">
                                 </label>
-                                <label class="btn btn-secondary">
+                                <label for="dinersclub" class="btn btn-secondary">
                                     <input type="radio" name="tarjeta" id="dinersclub" autocomplete="off">
-                                    <i class="fab fa-cc-dinersclub"></i> <img src="icons/dinersclub.png" width="30px"
+                                    <i class="icon-dinersclub"></i> <img src="icons/dinersclub.png" width="30px"
                                         height="30px" alt="">
                                 </label>
                             </div>
@@ -107,7 +107,7 @@
                         <div class="col-6">
                             <label for="basic-url" class="form-label">Message</label>
                             <div class="input-group mb-3">
-                                <textarea class="form-control" aria-label="With textarea"></textarea>
+                                <textarea class="form-control"></textarea>
                             </div>
                         </div>
                         <div class="card-footer text-muted d-flex">
